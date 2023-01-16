@@ -1,6 +1,10 @@
 #include <Arduino.h>
 #include <Joystick.h>
 
+//You can adjust the delay between each check loop in ms (ie: 1000 = 1 second)
+#define shifter_delay 250
+
+//Look into the X and Y value in Serial monitor and adjust the thresholds if it doesn't ingage gears correctly ingame
 const int x_thresh_left = 400; // if x < 400
 const int x_thresh_right = 625; // if x > 650
 const int y_thresh_high = 900; // if y > 900
@@ -22,6 +26,7 @@ uint8_t ReadShifter(){
   Serial.print("\nY: "+String(y));
   Serial.print("\nReverse: "+String(reverse));
   Serial.print("\n---------");
+  
   if (reverse){ // Reverse
     gear = 7; 
   }
@@ -67,20 +72,14 @@ void loop() {
   current_gear = ReadShifter();
 
   if (last_gear != current_gear){
+    Serial.print("\n|---------|");
     Serial.print("\nLast gear: "+String(last_gear));
     Serial.print("\nCurrent Gear: "+String(current_gear));
+    Serial.print("\n|---------|");
     Joystick.releaseButton(last_gear);
     Joystick.pressButton(current_gear);
     last_gear = current_gear;
   }
   
-  delay(250);
+  delay(shifter_delay);
 }
-
-// x_thresh_left = 850; //if x < 850 
-// x_thresh_right = 990; //if x > 990
-// x is at middle position when above 850 and below 990
-// y_thresh_high = 800; //if y > 800 and y < 850
-// y_thresh_mid = 850 // if y > 850 = neutral
-// y_thresh_low = 550; //if y < 550
-
