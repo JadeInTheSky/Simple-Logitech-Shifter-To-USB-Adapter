@@ -36,7 +36,9 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 3. Configure your board
 4. Add included Joystick library zip file
 5. Upload to board
+   
 ![Add library](https://github.com/JadeInTheSky/Logitech-Shifter-2-USB/blob/main/img/IncludeLibrary.PNG?raw=true)
+
 ## Troubleshooting
 Soon...
 ## Issues?
