@@ -6,7 +6,7 @@
 
 //Look into the X and Y value in Serial monitor and adjust the thresholds if it doesn't ingage gears correctly ingame
 const int x_thresh_left = 400; // if x < 400
-const int x_thresh_right = 625; // if x > 650
+const int x_thresh_right = 625; // if x > 625
 const int y_thresh_high = 900; // if y > 900
 const int y_thresh_low = 150; // if y < 150
 
@@ -63,7 +63,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(12, INPUT); // Reverse
   pinMode(A1, INPUT_PULLUP); // Y Axis
-  pinMode(A2, INPUT_PULLUP); // X axis
+  pinMode(A0, INPUT_PULLUP); // X axis
 
   Joystick.begin();
 }
