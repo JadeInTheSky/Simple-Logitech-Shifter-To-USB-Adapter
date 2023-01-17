@@ -34,7 +34,7 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 1. Download the files in the release tab
 2. Open the ino files in ArduinoIDE
 3. Configure your board
-4. Add included Joystick library zip file
+4. Add included Joystick library zip file (Sketch->Include Library-> Add .ZIP Library)
 5. Upload to board
    
 ![Add library](https://github.com/JadeInTheSky/Logitech-Shifter-2-USB/blob/main/img/IncludeLibrary.PNG?raw=true)
