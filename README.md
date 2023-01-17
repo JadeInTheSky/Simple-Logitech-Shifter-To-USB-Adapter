@@ -24,7 +24,7 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 ## Requirements
 * Joystick Library: [MHeironimus/ArduinoJoystickLibrary](https://github.com/MHeironimus/ArduinoJoystickLibrary)
 ## Diagrams
-![Leonardo-x-DB9](https://github.com/JadeInTheSky/Logitech-Shifter-2-USB/blob/main/Leonardo_DB9_Chart.png?raw=true)
+![Leonardo-DB9](https://github.com/JadeInTheSky/Logitech-Shifter-2-USB/blob/main/Leonardo_DB9_Chart.png?raw=true)
 ## Programming (Visual Studio Code)
 
 1. Open cloned repo in vscode
