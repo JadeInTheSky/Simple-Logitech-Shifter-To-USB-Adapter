@@ -11,7 +11,6 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 
 * 1x Arduino Leonardo (or any atmega32u4 based arduino)
 * 1x Male DB9 Port
-* Wires
 * Soldering material
 
 
@@ -19,7 +18,6 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 
 * How to solder
 * How to setup the Arduino by using the Arduino IDE / or on VSCODE using [platformIO](https://www.youtube.com/watch?v=dany7ae_0ks&t=280s)
-* How to use your brain
 
 ## Requirements
 * Joystick Library: [MHeironimus/ArduinoJoystickLibrary](https://github.com/MHeironimus/ArduinoJoystickLibrary)
