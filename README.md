@@ -18,7 +18,7 @@ In itself, the logitech shifter use a XY plane (0-1000) to know what gear you ar
 ## What you should already know
 
 * How to solder
-* How to setup the Arduino on VSCODE using [platformIO](https://www.youtube.com/watch?v=dany7ae_0ks&t=280s) / or by using the Arduino IDE
+* How to setup the Arduino by using the Arduino IDE / or on VSCODE using [platformIO](https://www.youtube.com/watch?v=dany7ae_0ks&t=280s)
 * How to use your brain
 
 ## Requirements
