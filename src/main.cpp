@@ -17,8 +17,8 @@ Joystick_ Joystick;
 
 uint8_t ReadShifter(){
   int gear = 0;
-  int x = analogRead(A0); //Green wire
-  int y = analogRead(A1); //Blue wire
+  int x = analogRead(A0);
+  int y = analogRead(A1);
   bool reverse = digitalRead(12);
 
   Serial.print("\n---------");
@@ -31,26 +31,26 @@ uint8_t ReadShifter(){
     gear = 7; 
   }
   else if (x < x_thresh_left){ 
-    if (y > y_thresh_high){ //gear 1
+    if (y > y_thresh_high){
       gear = 1;
     }
-    else if (y <y_thresh_low){ //gear 2
+    else if (y <y_thresh_low){
       gear = 2;
     }
   }
   else if (x > x_thresh_left and x < x_thresh_right){ 
-    if (y > y_thresh_high){ //gear 3
+    if (y > y_thresh_high){
       gear = 3;
     }
-    else if (y <y_thresh_low){ //gear 4
+    else if (y <y_thresh_low){
       gear = 4;
     }
   }
   else if (x > x_thresh_right){ 
-    if (y > y_thresh_high){ //gear 5
+    if (y > y_thresh_high){
       gear = 5;
     }
-    else if (y <y_thresh_low){ //gear 6
+    else if (y <y_thresh_low){
       gear = 6;
     }
   }
