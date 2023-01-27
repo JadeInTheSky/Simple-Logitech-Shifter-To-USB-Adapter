@@ -3,7 +3,7 @@
 
 This project consist on making the logitech shifter into a standalone USB Gamepad using the ArduinoJoystickLibrary by MHeironimus. 
 
-In itself, the logitech shifter use a XY plane (0-1000) to know what gear you are into using threshold. The code uses that x y plane to setup thresholds and then report the corresponding gear to the pc using the Joystick Library.
+In itself, the logitech shifter use a XY plane (0-1000) using some potentiometers to know what gear you are into using XY thresholds. The code uses that XY plane to setup thresholds and then report the corresponding gear to the pc using the Joystick Library.
 
 
 
