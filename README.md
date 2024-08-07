@@ -38,9 +38,6 @@ In itself, the logitech shifter use a XY plane (0-1000) using some potentiometer
 5. Upload to board
    
 ![Add library](https://github.com/JadeInTheSky/Logitech-Shifter-2-USB/blob/main/img/IncludeLibrary.PNG?raw=true)
-
-## Troubleshooting
-Soon...
 ## Issues?
 You are having issue with my code? Do not hesitate to open an Issue ticket. 
 
